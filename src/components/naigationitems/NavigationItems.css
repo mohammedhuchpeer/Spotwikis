@@ -1,0 +1,5 @@
+.NavigationItems {
+    display: flex;
+    flex-flow: row;
+    padding-inline-start: 0%;
+}

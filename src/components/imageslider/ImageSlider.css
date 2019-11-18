@@ -1,0 +1,36 @@
+
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.wrapper, .wrapper .front-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1;
+}
+
+.wrapper .front-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* will-change: left;
+	 */
+}
+
+.wrapper._move .front-image {
+    transition: left 0.9s cubic-bezier(0, 0, 0.2, 1);
+    left: -100%;
+}

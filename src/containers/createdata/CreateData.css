@@ -1,0 +1,151 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    position: relative;
+    top: 25px;
+    bottom: 25px;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .1);
+    display: block;
+    padding: 1.0rem;
+}
+
+.formGroup {
+    padding: 20px;
+    border: 0;
+}
+
+.formTextarea, .formInput {
+    display: block;
+    padding: .5rem .75rem;
+    width: 94%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: black;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    margin-left: 0;
+    margin-top: 2px;
+    top: 5px;
+}
+
+.formInput:focus {
+    outline: 0;
+    border-color: #ffab00;
+}
+
+.formTextarea:focus {
+    resize: vertical;
+    border-color: aqua;
+    font: bold 14px inherit;
+}
+
+fieldset {
+    border: none;
+    padding: 15px;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(black, .35), 0 6px 6px rgba(black, .65);
+}
+
+html:hover {
+    color: black;
+}
+
+form {
+    padding: remy(32px);
+    margin-top: 2rem;
+    max-width: remy(500px);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #111;
+    font-weight: 200;
+}
+
+.Label {
+    display: inline-block;
+    width: 5em;
+    padding: 0 1em;
+    text-align: right;
+    cursor: pointer;
+    box-shadow: 0 20px 35px rgba(51, 51, 70, 0.1);
+}
+
+input, [type=file]+.Label {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    text-align: left;
+    padding: 10px;
+    width: 150px;
+    margin: 0;
+    left: 0;
+    position: relative;
+}
+
+[type=file]+.Label {
+    text-align: center;
+    left: 20px;
+    top: 0.5em;
+    /* Decorative */
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+[type=file]+label:hover {
+    background: #3399ff;
+}
+
+.Button {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    padding: .75rem 1rem;
+    margin-top: 1.618rem;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #ffab00;
+    border: solid transparent;
+    box-shadow: 0 20px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+    cursor: pointer;
+    user-select: none;
+}
+
+.Button:hover {
+    background-color: lightsalmon;
+    box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 8px 15px rgba(0, 0, 0, .07);
+}
+
+.Button:focus {
+    outline: 0;
+}
+
+@media(min-width: 500px) {
+    .form {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
